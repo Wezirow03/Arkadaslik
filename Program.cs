@@ -1,94 +1,97 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Runtime.Remoting.Messaging;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Hesap.Makinesi
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             while (true)
             {
-                Console.WriteLine("Написат как такое : 2 + 5 +...");
-                string s = Console.ReadLine();
-                string[] split = s.Split(' ');
+                Console.WriteLine("Enter an expression like: 2 + 5 * 3");
+                string input = Console.ReadLine();
 
-                if (split.Length < 3 || split.Length % 2 == 0)
+                try
                 {
-                    Console.WriteLine("Выполните действия с числами");
-                    continue;
+                    int result = Calculator.Calculate(input);
+                    Console.WriteLine("Result: " + result);
                 }
-
-                List<int> sanlar = new List<int>();
-                List<string> amallar = new List<string>();
-
-
-                for (int i = 0; i < split.Length; i++)
+                catch (Exception ex)
                 {
-                    if (i % 2 == 0)
-                    {
-                        sanlar.Add(Convert.ToInt32(split[i]));
-                    }
-                    else
-                    {
-                        amallar.Add(split[i]);
-                    }
+                    Console.WriteLine("Error: " + ex.Message);
                 }
-
-                while (amallar.Contains("*") || amallar.Contains("/"))
-                {
-                    for (int i = 0; i < amallar.Count; i++)
-                    {
-                        if (amallar[i] == "*" || amallar[i] == "/")
-                        {
-                            int result = (amallar[i] == "*") ? sanlar[i] * sanlar[i + 1] : sanlar[i] / sanlar[i + 1];
-
-                            sanlar[i] = result;
-                            sanlar.RemoveAt(i + 1);
-                            amallar.RemoveAt(i);
-                            break; 
-                        }
-                    }
-                }
-
-                while (amallar.Count > 0)
-                {
-                    int result = (amallar[0] == "+") ? sanlar[0] + sanlar[1] : sanlar[0] - sanlar[1];
-
-                    sanlar[0] = result;
-                    sanlar.RemoveAt(1);
-                    amallar.RemoveAt(0);
-                }
-
-                Console.WriteLine("Sonuç: " + sanlar[0]);
             }
         }
-    
+    }
 
+    public static class Calculator
+    {
+        public static int Calculate(string expression)
+        {
+            string[] parts = expression.Split(' ');
 
+            if (parts.Length < 3 || parts.Length % 2 == 0)
+                throw new ArgumentException("Invalid expression");
 
+            List<int> numbers = new List<int>();
+            List<string> operators = new List<string>();
 
-public static int gosmak(int a, int b)
-        { return a + b; }
-        public static int ayyrmak(int a, int b)
-        { return a - b; }
-        public static int kopeltmek(int a, int b)
-        { return a * b; }
-        public static int bolmek(int a, int b)
+            for (int i = 0; i < parts.Length; i++)
+            {
+                if (i % 2 == 0)
+                    numbers.Add(Convert.ToInt32(parts[i]));
+                else
+                    operators.Add(parts[i]);
+            }
+
+            while (operators.Contains("*") || operators.Contains("/"))
+            {
+                for (int i = 0; i < operators.Count; i++)
+                {
+                    if (operators[i] == "*" || operators[i] == "/")
+                    {
+                        int result = (operators[i] == "*")
+                            ? Multiply(numbers[i], numbers[i + 1])
+                            : Divide(numbers[i], numbers[i + 1]);
+
+                        numbers[i] = result;
+                        numbers.RemoveAt(i + 1);
+                        operators.RemoveAt(i);
+                        break;
+                    }
+                }
+            }
+
+            while (operators.Count > 0)
+            {
+                int result = (operators[0] == "+")
+                    ? Add(numbers[0], numbers[1])
+                    : Subtract(numbers[0], numbers[1]);
+
+                numbers[0] = result;
+                numbers.RemoveAt(1);
+                operators.RemoveAt(0);
+            }
+
+            return numbers[0];
+        }
+
+        public static int Add(int a, int b) => a + b;
+
+        public static int Subtract(int a, int b) => a - b;
+
+        public static int Multiply(int a, int b) => a * b;
+
+        public static int Divide(int a, int b)
         {
             if (b == 0)
             {
-                Console.WriteLine("Ошибка");
+                Console.WriteLine("Error: Division by zero");
                 return 0;
             }
             return a / b;
-        
         }
     }
 }
