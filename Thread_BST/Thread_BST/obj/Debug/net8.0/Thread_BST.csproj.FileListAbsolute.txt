@@ -1,0 +1,15 @@
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\Thread_BST.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\Thread_BST.AssemblyInfoInputs.cache
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\Thread_BST.AssemblyInfo.cs
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\Thread_BST.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\Thread_BST.sourcelink.json
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\bin\Debug\net8.0\Thread_BST.exe
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\bin\Debug\net8.0\Thread_BST.deps.json
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\bin\Debug\net8.0\Thread_BST.runtimeconfig.json
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\bin\Debug\net8.0\Thread_BST.dll
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\bin\Debug\net8.0\Thread_BST.pdb
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\Thread_BST.dll
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\refint\Thread_BST.dll
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\Thread_BST.pdb
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\Thread_BST.genruntimeconfig.cache
+D:\Visual Studio 2022\C#\Thread_BST\Thread_BST\obj\Debug\net8.0\ref\Thread_BST.dll

@@ -1,0 +1,15 @@
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\bin\Debug\net8.0\MyCon_Dic.exe
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\bin\Debug\net8.0\MyCon_Dic.deps.json
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\bin\Debug\net8.0\MyCon_Dic.runtimeconfig.json
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\bin\Debug\net8.0\MyCon_Dic.dll
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\bin\Debug\net8.0\MyCon_Dic.pdb
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\MyCon_Dic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\MyCon_Dic.AssemblyInfoInputs.cache
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\MyCon_Dic.AssemblyInfo.cs
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\MyCon_Dic.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\MyCon_Dic.sourcelink.json
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\MyCon_Dic.dll
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\refint\MyCon_Dic.dll
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\MyCon_Dic.pdb
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\MyCon_Dic.genruntimeconfig.cache
+D:\Visual Studio 2022\C#\MyCon_Dic\MyCon_Dic\obj\Debug\net8.0\ref\MyCon_Dic.dll
